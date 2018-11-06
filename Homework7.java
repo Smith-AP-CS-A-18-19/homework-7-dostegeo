@@ -1,10 +1,15 @@
 public class Homework7 {
-
+//George Doster
 	/* Use a while loop to add up the integers
 	 * from 1 to x and return the result
 	 */
 	public static int problem1(int x) {
-
+		int y = 1;
+		while(y<x){
+			y = y+x;
+			y++;
+		}
+		return y;
 	}
 
 	/* Use a loop (while or for) to find the
@@ -14,7 +19,11 @@ public class Homework7 {
 	 * use that method, you must use a loop
 	 */
 	public static int problem2(String s, String t) {
-
+while(s!=t){
+	int firstIndex;
+	firstIndex = s.indexOf(t);
+}
+return firstIndex;
 	}
 
 	/* Use a loop (while or for) to calculate and
@@ -22,7 +31,10 @@ public class Homework7 {
 	 * power
 	 */
 	public static int problem3(int a, int b) {
-
+while(a!=0){
+	int power = Math.pow(a,b);
+	return power;
+}
 	}
 
 	/* Use a loop (while or for) to calculate and
@@ -30,7 +42,10 @@ public class Homework7 {
 	 * b (i.e., calculate a / b using a loop)
 	 */
 	public static int problem4(int a, int b) {
-
+while(a>b){
+	int z=a/b;
+	return z;
+}
 	}
 
 	/* Use a loop (while or for) to calculate and
@@ -38,7 +53,10 @@ public class Homework7 {
 	 * (i.e., calculate a % b using a loop)
 	 */
 	 public static int problem5(int a, int b) {
-
+while(a>b){
+	int x = a%b;
+	return x;
+}
 	 }
 
 	public static void main(String[] args) {
