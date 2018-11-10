@@ -4,12 +4,13 @@ public class Homework7 {
 	 * from 1 to x and return the result
 	 */
 	public static int problem1(int x) {
+		int z = 0;
 		int y = 1;
-		while(y<x){
-			y = y+x;
+		while(y <= x){
+			z = y+z;
 			y++;
 		}
-		return y;
+		return z;
 	}
 
 	/* Use a loop (while or for) to find the
@@ -19,33 +20,49 @@ public class Homework7 {
 	 * use that method, you must use a loop
 	 */
 	public static int problem2(String s, String t) {
-while(s!=t){
-	int firstIndex;
-	firstIndex = s.indexOf(t);
-}
-return firstIndex;
+		int zero = 0;
+while (zero <= s.length() - t.length()){
+	String x = s.substring(zero , t.length()+ zero);
+	if (x.equals(t)){
+		return zero;
 	}
+	zero++;
+}
+return -1;
+}
+
+
 
 	/* Use a loop (while or for) to calculate and
 	 * return the value of a raised to the b
 	 * power
 	 */
 	public static int problem3(int a, int b) {
-while(a!=0){
-	int power = Math.pow(a,b);
-	return power;
-}
+int x = 0;
+int y = a;
+while (x + 1 < b){
+	if (b==0){
+		y = 1;
+		x = b;
+	}else{
+		y = y * a;
+		x++;
 	}
+}
+return y;
+}
 
 	/* Use a loop (while or for) to calculate and
 	 * return the integer portion of a divided by
 	 * b (i.e., calculate a / b using a loop)
 	 */
 	public static int problem4(int a, int b) {
-while(a>b){
-	int z=a/b;
-	return z;
+int x = 0;
+while (a >= b){
+	a -= b;
+	x++;
 }
+return x;
 	}
 
 	/* Use a loop (while or for) to calculate and
@@ -53,11 +70,14 @@ while(a>b){
 	 * (i.e., calculate a % b using a loop)
 	 */
 	 public static int problem5(int a, int b) {
-while(a>b){
-	int x = a%b;
-	return x;
+while (a >=b){
+	a -= b;
 }
+return a;
 	 }
+
+
+
 
 	public static void main(String[] args) {
 		int exitCode = 0;
